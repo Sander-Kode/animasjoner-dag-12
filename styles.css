@@ -142,7 +142,7 @@ img {
   animation-name: slideInLeft ;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
-  animation-delay: 0;
+  animation-delay: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -150,14 +150,36 @@ img {
 @keyframes slideInLeft {
   from {
     transform: translateX(-1000px)
+    
   }
   to {
     transform: translateX(0);
+    background-color: red;
   }
 }
 
 .slideInRightCard {
   background-color: beige;
+
+  /* Longhand */
+  animation-name: slideInRight ;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(1000px);
+  }
+  90% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .rotateCard {
