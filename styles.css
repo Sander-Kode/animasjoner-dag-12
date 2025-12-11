@@ -116,6 +116,15 @@ img {
 
 .buttonOpacity {
   opacity: 0.5;
+
+  transition-property: opacity;
+  transition-timing-function: ease-out ;
+  transition-delay: 0.3s ;
+  transition-duration: 1s;
+}
+
+.buttonOpacity:hover {
+  opacity: 1;
 }
 
 /* ANIMASJONER */
