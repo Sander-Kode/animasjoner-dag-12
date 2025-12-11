@@ -137,13 +137,30 @@ img {
 
 .slideInLeftCard {
   background-color: beige;
+
+  /* Longhand */
+  animation-name: slideInLeft ;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-1000px)
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .slideInRightCard {
   background-color: beige;
 }
 
-.rotate {
+.rotateCard {
   background-color: beige;
 }
 
